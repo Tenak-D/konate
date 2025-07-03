@@ -1,0 +1,319 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konate A. Djamel - Salesforce Functional Consultant Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Fond noir/gris très foncé */
+            color: #e0e0e0; /* Texte gris clair */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #2c3e50, #34495e); /* Dégradé de gris foncé à bleu-gris */
+        }
+        .skill-card, .project-card {
+            background-color: #2c2c2c; /* Gris foncé pour les cartes */
+            border-radius: 0.75rem; /* coins arrondis */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.15); /* ombre plus prononcée sur fond sombre */
+            transition: transform 0.2s ease-in-out;
+            /* Changed cursor to pointer to indicate it's clickable */
+            cursor: pointer;
+        }
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .icon-circle {
+            background-color: #4a4a4a; /* Gris moyen pour les cercles d'icônes */
+            color: #6366f1; /* Indigo pour les icônes */
+            border-radius: 9999px; /* rond complet */
+            padding: 0.75rem; /* espacement */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-gray-800 {
+            color: #f0f0f0; /* Texte clair pour les titres sur fond sombre */
+        }
+        .text-gray-700 {
+            color: #d0d0d0; /* Texte légèrement plus clair pour les paragraphes sur fond sombre */
+        }
+        .text-gray-600 {
+            color: #b0b0b0; /* Texte encore plus clair pour les descriptions sur fond sombre */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Section En-tête/Héros -->
+    <header class="gradient-bg text-white py-16 px-4 sm:px-6 lg:px-8 text-center rounded-b-3xl shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 id="portfolio-owner-name" class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Konate A. Djamel</h1>
+            <p class="text-xl sm:text-2xl font-light mb-6">Consultant Fonctionnel Salesforce Senior</p>
+            <p class="text-md sm:text-lg max-w-2xl mx-auto opacity-90">
+                Accélérer le succès commercial grâce à des solutions Salesforce innovantes, l'optimisation des processus et une compréhension approfondie des besoins des utilisateurs.
+            </p>
+            <a href="#contact" class="inline-block mt-8 px-8 py-3 bg-white text-indigo-700 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105">
+                Me Contacter
+            </a>
+        </div>
+    </header>
+
+    <!-- Section À Propos / Compétences -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900"> <!-- Fond plus foncé pour cette section -->
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-100">À Propos de Moi & Mon Expertise</h2>
+            
+            <div class="mb-12 text-center text-lg max-w-3xl mx-auto leading-relaxed text-gray-300">
+                <p>En tant que consultant fonctionnel Salesforce expérimenté, je me spécialise dans la liaison entre les objectifs commerciaux et les solutions techniques. Mon approche est centrée sur l'optimisation des processus, la promotion de l'adoption par les utilisateurs et la garantie d'implémentations Salesforce évolutives et efficaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Compétence 1: Automatisation & Optimisation des Processus -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-robot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Automatisation & Optimisation des Processus</h3>
+                    <p class="text-gray-400 text-sm">Expert dans la rationalisation des flux de travail et l'amélioration de l'efficacité à l'aide des outils d'automatisation Salesforce.</p>
+                </div>
+
+                <!-- Compétence 2: Connaissance de la Plateforme Salesforce -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fab fa-salesforce text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Connaissance de la Plateforme Salesforce</h3>
+                    <p class="text-gray-400 text-sm">Compréhension approfondie de Salesforce Sales Cloud, Service Cloud, Experience Cloud, et plus encore.</p>
+                </div>
+
+                <!-- Compétence 3: Élicitation des User Stories & des Exigences -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Élicitation des User Stories & des Exigences</h3>
+                    <p class="text-gray-400 text-sm">Compétent dans la collecte, la documentation et la priorisation des exigences métier en user stories exploitables.</p>
+                </div>
+
+                <!-- Compétence 4: Cartographie & Optimisation des Processus (BPMN/Organigrammes) -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-project-diagram text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Cartographie & Optimisation des Processus</h3>
+                    <p class="text-gray-400 text-sm">Maîtrise de la modélisation visuelle des processus (BPMN, organigrammes) pour une conception de solution claire.</p>
+                </div>
+
+                <!-- Compétence 5: Communication & Facilitation des Parties Prenantes -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Communication & Facilitation des Parties Prenantes</h3>
+                    <p class="text-gray-400 text-sm">Excellent dans la collaboration avec diverses parties prenantes, la facilitation d'ateliers et la présentation de solutions.</p>
+                </div>
+
+                <!-- Compétence 6: Modélisation des Données Salesforce -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-database text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Modélisation des Données Salesforce</h3>
+                    <p class="text-gray-400 text-sm">Conception de structures de données efficaces et évolutives au sein de la plateforme Salesforce.</p>
+                </div>
+
+                <!-- Compétence 7: Livraison Agile/Scrum -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Livraison Agile/Scrum</h3>
+                    <p class="text-gray-400 text-sm">Expérimenté dans les méthodologies Agile, y compris Jira, les cérémonies de sprint et le toilettage du backlog.</p>
+                </div>
+
+                <!-- Compétence 8: Automatisation des Processus (Flows, Règles) -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-magic text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Automatisation des Processus (Flows, Règles)</h3>
+                    <p class="text-gray-400 text-sm">Maîtrise de la construction d'automatisations complexes à l'aide de Salesforce Flows, Workflow Rules et Process Builder.</p>
+                </div>
+
+                <!-- Compétence 9: Rapports & Tableaux de Bord -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Rapports & Tableaux de Bord</h3>
+                    <p class="text-gray-400 text-sm">Création de rapports et de tableaux de bord perspicaces pour fournir une intelligence économique exploitable.</p>
+                </div>
+
+                <!-- Compétence 10: Tests & Assurance Qualité (UAT) et Déploiement -->
+                <div class="skill-card p-6 flex flex-col items-center text-center">
+                    <div class="icon-circle mb-4">
+                        <i class="fas fa-check-circle text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Tests & Déploiement</h3>
+                    <p class="text-gray-400 text-sm">Assurer la qualité des solutions par le biais des tests d'acceptation utilisateur (UAT) et gérer les déploiements transparents entre les environnements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets de Portfolio -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800"> <!-- Fond plus foncé pour cette section -->
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-100">Mes Projets de Portfolio</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1: Implémentation & Optimisation de Sales Cloud -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a57b7786?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Sales+Cloud';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Implémentation & Optimisation de Sales Cloud</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai dirigé l'implémentation complète de Salesforce Sales Cloud pour une entreprise SaaS en croissance, ce qui a entraîné une augmentation de 20% de l'efficacité des ventes. J'ai mis en œuvre des flux d'automatisation complexes pour l'attribution des leads et la gestion des opportunités.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Implémentation & Optimisation de Sales Cloud')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+
+                <!-- Projet 2: Intégration Service Cloud & CTI -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1587574293340-a084ad297701?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Service+Cloud';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Intégration Service Cloud & CTI</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai conçu et déployé une solution Service Cloud complète intégrée à un système CTI, améliorant les temps de réponse du service client de 35%. J'ai développé des composants Lightning personnalisés pour la productivité des agents.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Intégration Service Cloud & CTI')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+
+                <!-- Projet 3: Développement d'Applications Personnalisées & Migration de Données -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1521737711867-ee13576042b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Custom+App';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Développement d'Applications Personnalisées & Migration de Données</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai conçu et supervisé le développement d'une application Salesforce personnalisée pour la gestion des stocks, y compris la migration des données des systèmes hérités. J'ai assuré l'intégrité des données et une expérience utilisateur fluide.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Développement d\'Applications Personnalisées & Migration de Données')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+
+                <!-- Projet 4: Portail Experience Cloud pour Partenaires -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Experience+Cloud';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Portail Experience Cloud pour Partenaires</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai construit et personnalisé un portail Experience Cloud (Community Cloud) pour améliorer la collaboration et le partage d'informations avec les partenaires clés, ce qui a conduit à un engagement accru des partenaires.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Portail Experience Cloud pour Partenaires')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+
+                <!-- Projet 5: Implémentation de Salesforce CPQ -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Salesforce+CPQ';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Implémentation de Salesforce CPQ</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai mis en œuvre avec succès Salesforce CPQ (Configure, Price, Quote) pour automatiser le processus de devis, réduisant les erreurs manuelles et accélérant considérablement les cycles de vente.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Implémentation de Salesforce CPQ')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+
+                <!-- Projet 6: Développement de Marketing Cloud Journey Builder -->
+                <div class="project-card p-6 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1607221168128-e4b9c1d1a6e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2c2c2c/e0e0e0?text=Marketing+Cloud';" alt="" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Développement de Marketing Cloud Journey Builder</h3>
+                    <p class="text-gray-400 text-sm flex-grow mb-4">J'ai développé et optimisé des parcours clients dans Salesforce Marketing Cloud, créant des stratégies de communication personnalisées et automatisées qui ont stimulé l'engagement client et les taux de conversion.</p>
+                    <a href="javascript:void(0)" onclick="showProjectDetails('Développement de Marketing Cloud Journey Builder')" class="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">
+                        Voir les Détails
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900"> <!-- Fond plus foncé pour cette section -->
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-gray-100">Me Contacter</h2>
+            <p class="text-lg text-gray-300 mb-8">
+                Je suis toujours ouvert à discuter de nouveaux projets, d'opportunités intéressantes ou de la manière dont je peux aider votre organisation à réussir avec Salesforce.
+            </p>
+            <form class="space-y-6 bg-gray-700 p-8 rounded-xl shadow-md"> <!-- Formulaire sur fond gris plus clair -->
+                <div>
+                    <label for="name" class="block text-left text-sm font-medium text-gray-100 mb-1">Nom</label>
+                    <input type="text" id="name-input" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400" placeholder="Konate A. Djamel">
+                </div>
+                <div>
+                    <label for="email" class="block text-left text-sm font-medium text-gray-100 mb-1">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400" placeholder="votre.email@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-left text-sm font-medium text-gray-100 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400" placeholder="Parlez-moi de votre projet ou de votre demande..."></textarea>
+                </div>
+                <button type="submit" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
+                    Envoyer le Message
+                </button>
+            </form>
+            <div class="mt-8 text-center text-gray-300">
+                <p>Ou connectez-vous avec moi sur :</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-indigo-400 hover:text-indigo-200 transition duration-300">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-indigo-400 hover:text-indigo-200 transition duration-300">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-indigo-400 hover:text-indigo-200 transition duration-300">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-950 text-white py-8 px-4 sm:px-6 lg:px-8 text-center rounded-t-3xl shadow-lg"> <!-- Fond encore plus foncé pour le pied de page -->
+        <div class="max-w-6xl mx-auto">
+            <p>&copy; 2024 Konate A. Djamel. Tous droits réservés.</p>
+            <p class="mt-2 text-sm opacity-80">Construit avec <span class="text-red-500">&hearts;</span> et l'expertise Salesforce.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            const userName = "Konate A. Djamel"; // Nom fixé
+
+            // Obtenir les références aux éléments où le nom est affiché
+            const portfolioNameElement = document.getElementById('portfolio-owner-name');
+            const nameInputElement = document.getElementById('name-input'); // Obtenir le champ de saisie du nom
+
+            // Mettre à jour la balise h1 et le placeholder du champ de nom avec le nom fixé
+            portfolioNameElement.textContent = userName;
+            nameInputElement.placeholder = userName; // Mettre à jour le placeholder
+
+            // Journaliser le nom dans la console
+            console.log("Nom de l'utilisateur inséré dans le journal (console) : " + userName);
+        };
+
+        /**
+         * Affiche les détails du projet dans la console.
+         * En production, cette fonction redirigerait vers une page de détails de projet.
+         * @param {string} projectName - Le nom du projet à afficher.
+         */
+        function showProjectDetails(projectName) {
+            console.log(`Détails du projet "${projectName}" cliqués.`);
+            // Vous pouvez ajouter ici une logique pour afficher un modal,
+            // ou rediriger vers une page de détails de projet réelle.
+            // Par exemple: window.location.href = 'projets/' + encodeURIComponent(projectName.toLowerCase().replace(/\s/g, '-')) + '.html';
+        }
+    </script>
+</body>
+</html>
